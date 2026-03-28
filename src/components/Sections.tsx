@@ -752,14 +752,16 @@ export const CategoryDetail: React.FC<{
         <div className="absolute inset-0 bg-gradient-to-t from-cinematic-charcoal via-transparent to-transparent" />
         
         <div className="absolute bottom-12 left-6 md:bottom-16 md:left-12 lg:left-24 z-10">
-          <button 
-            onClick={onClose}
-            className="text-[10px] tracking-[0.5em] text-cinematic-gold uppercase hover:text-white transition-colors mb-4 block interactive"
-          >
-            ← Back to Categories
-          </button>
           <h2 className="text-4xl md:text-7xl lg:text-8xl font-display font-black tracking-tighter uppercase leading-none">{category}</h2>
         </div>
+
+        <button 
+          onClick={onClose}
+          className="fixed top-6 right-6 md:top-12 md:right-12 z-[10000] p-4 text-cinematic-gold hover:text-white transition-colors interactive"
+          aria-label="Close category"
+        >
+          <X size={32} />
+        </button>
 
         {category === "Film & Production" && (
           <div className="absolute bottom-12 right-6 md:bottom-16 md:right-12 lg:right-24 z-10">
@@ -901,7 +903,7 @@ export const ProjectDetail: React.FC<{ project: Project; onClose: () => void }> 
           onClick={onClose}
           className="p-2 md:p-4 text-cinematic-gold hover:text-white transition-colors interactive"
         >
-          <X size={24} md:size={32} />
+          <X className="w-6 h-6 md:w-8 md:h-8" />
         </button>
       </div>
 

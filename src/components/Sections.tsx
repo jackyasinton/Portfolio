@@ -2518,9 +2518,14 @@ export const Resume: React.FC = () => {
           </div>
 
           <div className="mt-24">
-            <button className="px-8 py-4 border border-cinematic-gold/30 text-[10px] tracking-[0.4em] uppercase text-cinematic-gold hover:bg-cinematic-gold hover:text-cinematic-black transition-all interactive">
+            <a 
+              href="https://drive.google.com/file/d/1OIedhhPIYfvXbtUh-zJwvwYEHYjYi4N2/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 border border-cinematic-gold/30 text-[10px] tracking-[0.4em] uppercase text-cinematic-gold hover:bg-cinematic-gold hover:text-cinematic-black transition-all interactive"
+            >
               Download Full CV
-            </button>
+            </a>
           </div>
         </div>
       </div>

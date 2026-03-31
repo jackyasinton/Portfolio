@@ -64,7 +64,7 @@ export const LoadingScreen: React.FC<{ onComplete: () => void }> = ({ onComplete
         transition={{ delay: 0.5 }}
         className="mt-8 text-[8px] md:text-xs tracking-[0.2em] md:tracking-[0.4em] uppercase text-cinematic-gold/50 px-6 text-center"
       >
-        A Production by Jack Yasinton Huvanundana
+        A Portfolio by Jack Yasinton Huvanundana
       </motion.div>
     </motion.div>
   );

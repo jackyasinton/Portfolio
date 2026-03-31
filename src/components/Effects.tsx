@@ -36,8 +36,13 @@ export const CustomCursor: React.FC = () => {
 
   return (
     <>
+      <style>{`
+        @media (min-width: 768px) {
+          body, html, #root, * { cursor: none !important; }
+        }
+      `}</style>
       <motion.div
-        className="fixed top-0 left-0 w-4 h-4 bg-cinematic-gold rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        className="hidden md:block fixed top-0 left-0 w-4 h-4 bg-cinematic-gold rounded-full pointer-events-none z-[20000] mix-blend-difference"
         style={{
           x: cursorX,
           y: cursorY,
@@ -46,7 +51,7 @@ export const CustomCursor: React.FC = () => {
         }}
       />
       <motion.div
-        className="fixed top-0 left-0 w-12 h-12 border border-cinematic-gold rounded-full pointer-events-none z-[9998]"
+        className="hidden md:block fixed top-0 left-0 w-12 h-12 border border-cinematic-gold rounded-full pointer-events-none z-[19999]"
         animate={{
           scale: isHovering ? 1.5 : 1,
           backgroundColor: isHovering ? 'rgba(201, 168, 76, 0.1)' : 'transparent',

@@ -20,9 +20,9 @@ export const LoadingScreen: React.FC<{ onComplete: () => void }> = ({ onComplete
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
-      <div className="relative w-48 h-48 flex items-center justify-center">
+      <div className="relative w-32 h-32 md:w-48 md:h-48 flex items-center justify-center">
         {/* Film Countdown Circle */}
-        <svg className="absolute inset-0 w-full h-full -rotate-90">
+        <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 192 192">
           <circle
             cx="96"
             cy="96"
@@ -51,7 +51,7 @@ export const LoadingScreen: React.FC<{ onComplete: () => void }> = ({ onComplete
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.5 }}
-            className="text-6xl font-display font-black text-cinematic-gold"
+            className="text-4xl md:text-6xl font-display font-black text-cinematic-gold"
           >
             {count > 0 ? count : "START"}
           </motion.span>
@@ -62,7 +62,7 @@ export const LoadingScreen: React.FC<{ onComplete: () => void }> = ({ onComplete
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="mt-8 text-xs tracking-[0.4em] uppercase text-cinematic-gold/50"
+        className="mt-8 text-[8px] md:text-xs tracking-[0.2em] md:tracking-[0.4em] uppercase text-cinematic-gold/50 px-6 text-center"
       >
         A Production by Jack Yasinton Huvanundana
       </motion.div>

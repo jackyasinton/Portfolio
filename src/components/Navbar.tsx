@@ -30,7 +30,7 @@ export const Navbar: React.FC = () => {
         initial={{ y: -100 }}
         animate={{ y: isVisible ? 0 : -100 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="fixed top-0 left-0 w-full z-[9990] px-8 py-6 flex justify-between items-center bg-cinematic-black/20 backdrop-blur-md border-b border-white/5"
+        className="fixed top-0 left-0 w-full z-[9990] px-6 md:px-12 py-6 flex justify-between items-center bg-cinematic-black/20 backdrop-blur-md border-b border-white/5"
       >
         <a href="#home" className="text-xl font-display font-bold tracking-tighter text-cinematic-gold interactive">
           JYH<span className="text-white">.</span>

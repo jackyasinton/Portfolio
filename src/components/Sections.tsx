@@ -2384,21 +2384,6 @@ export const Skills: React.FC = () => {
 
   return (
     <section id="skills" className="snap-section relative flex flex-col justify-center bg-transparent px-6 md:px-12 lg:px-24 py-24 overflow-hidden">
-      {/* Section Background Video */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="w-full h-full object-cover brightness-[0.25] contrast-125 saturate-[1.1] sepia-[0.4] hue-rotate-[-5deg]"
-        >
-          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260306_074215_04640ca7-042c-45d6-bb56-58b1e8a42489.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-cinematic-gold/10 mix-blend-color" />
-        <div className="absolute inset-0 bg-gradient-to-b from-cinematic-black via-transparent to-cinematic-black opacity-90" />
-      </div>
-
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

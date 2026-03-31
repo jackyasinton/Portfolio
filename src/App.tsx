@@ -27,18 +27,9 @@ export default function App() {
           <Navbar />
           
           {/* Fixed Cinematic Background for Skills/Resume/Contact */}
-          <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover brightness-[0.3] contrast-125 saturate-[1.2] sepia-[0.8] hue-rotate-[10deg]"
-            >
-              <source src="https://drive.google.com/uc?export=download&id=161R0HOMNBQvO3xrw02dV0T9JHcdH8fFs" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-cinematic-gold/15 mix-blend-color" />
-            <div className="absolute inset-0 bg-gradient-to-b from-cinematic-black via-transparent to-cinematic-black opacity-80" />
+          <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden bg-cinematic-black">
+            <div className="absolute inset-0 bg-cinematic-gold/5 mix-blend-color" />
+            <div className="absolute inset-0 bg-gradient-to-b from-cinematic-black via-transparent to-cinematic-black opacity-90" />
           </div>
 
           <main className={`snap-container ${isLocked ? 'overflow-hidden' : ''}`}>

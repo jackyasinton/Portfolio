@@ -2384,6 +2384,21 @@ export const Skills: React.FC = () => {
 
   return (
     <section id="skills" className="snap-section relative flex flex-col justify-center bg-transparent px-6 md:px-12 lg:px-24 py-24 overflow-hidden">
+      {/* Section Background Video */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover brightness-[0.25] contrast-125 saturate-[1.1] sepia-[0.4] hue-rotate-[-5deg]"
+        >
+          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260306_074215_04640ca7-042c-45d6-bb56-58b1e8a42489.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-cinematic-gold/10 mix-blend-color" />
+        <div className="absolute inset-0 bg-gradient-to-b from-cinematic-black via-transparent to-cinematic-black opacity-90" />
+      </div>
+
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -2464,6 +2479,17 @@ export const Resume: React.FC = () => {
 
   return (
     <section id="resume" className="snap-section relative bg-transparent flex flex-col justify-center p-6 md:p-12 lg:p-24 overflow-hidden">
+      {/* Section Background */}
+      <div className="absolute inset-0 z-0 opacity-20">
+        <img 
+          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920" 
+          alt="" 
+          className="w-full h-full object-cover grayscale"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-cinematic-black via-transparent to-cinematic-black" />
+      </div>
+
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-24 relative z-10">
         <div>
           <span className="text-[10px] tracking-[0.5em] text-cinematic-gold uppercase mb-16 block">Experience</span>
@@ -2522,6 +2548,17 @@ export const Contact: React.FC = () => {
   
   return (
     <section id="contact" className="snap-section relative bg-transparent flex flex-col justify-between p-12 md:p-24 overflow-hidden">
+      {/* Section Background */}
+      <div className="absolute inset-0 z-0 opacity-10">
+        <img 
+          src="https://images.unsplash.com/photo-1516387153529-7a390379b888?auto=format&fit=crop&q=80&w=1920" 
+          alt="" 
+          className="w-full h-full object-cover"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-cinematic-black via-transparent to-cinematic-black" />
+      </div>
+
       <div className="flex-1 flex flex-col items-center justify-center relative z-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}

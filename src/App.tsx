@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { LoadingScreen } from './components/LoadingScreen';
-import { CustomCursor, FilmGrain } from './components/Effects';
+import { FilmGrain } from './components/Effects';
 import { Navbar } from './components/Navbar';
 import { Hero, About, Work, Skills, Resume, Contact, ProjectDetail, CategoryDetail, Project } from './components/Sections';
 
@@ -22,7 +22,6 @@ export default function App() {
 
       {!isLoading && (
         <>
-          <CustomCursor />
           <FilmGrain />
           <Navbar />
           
